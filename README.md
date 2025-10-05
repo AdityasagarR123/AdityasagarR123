@@ -3,7 +3,7 @@
 <h3 align="center">🚀 Full Stack Developer | MERN Stack | AI/ML Enthusiast | UI/UX Designer</h3>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/befa1ca3-cff0-458f-8dc7-3ff7ce398498" width="1000" alt="Aditya's GitHub Banner"/>
+  <img src="https://github.com/user-attachments/assets/befa1ca3-cff0-458f-8dc7-3ff7ce398498" width="750" alt="Aditya's GitHub Banner"/>
 </p>
 
 ---
@@ -19,8 +19,8 @@
 
 ### 🤝 Connect With Me
 <p align="center">
-  <a href="https://linkedin.com/in/aditya-sagar" target="_blank">
-    <img src="[https://skillicons.dev/icons?i=linkedin](https://www.linkedin.com/in/aditya-sagar-1b35b2323/)" width="45" />
+  <a href="https://www.linkedin.com/in/aditya-sagar-1b35b2323/" target="_blank">
+    <img src="https://skillicons.dev/icons?i=linkedin" width="45" />
   </a>
   &nbsp;&nbsp;&nbsp;
   <a href="https://instagram.com/d4crush" target="_blank">
