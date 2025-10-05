@@ -20,14 +20,14 @@
 ### 🤝 Connect With Me
 <p align="center">
   <a href="https://linkedin.com/in/aditya-sagar" target="_blank">
-    <img src="https://skillicons.dev/icons?i=linkedin" width="45" />
+    <img src="[https://skillicons.dev/icons?i=linkedin](https://www.linkedin.com/in/aditya-sagar-1b35b2323/)" width="45" />
   </a>
   &nbsp;&nbsp;&nbsp;
   <a href="https://instagram.com/d4crush" target="_blank">
     <img src="https://skillicons.dev/icons?i=instagram" width="45" />
   </a>
   &nbsp;&nbsp;&nbsp;
-  <a href="mailto:adityasagar123@gmail.com">
+  <a href="mailto:adisagar450@gmail.com">
     <img src="https://skillicons.dev/icons?i=gmail" width="45" />
   </a>
 </p>
