@@ -1,22 +1,19 @@
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/befa1ca3-cff0-458f-8dc7-3ff7ce398498" width="1000" />
-</p>
-
 <!-- Intro Section -->
 <h1 align="center">Hey there 👋, I'm Aditya</h1>
-<h3 align="center">🚀 Full Stack Developer | MERN Stack | UI/UX Enthusiast</h3>
+<h3 align="center">🚀 Full Stack Developer | MERN Stack | AI/ML Enthusiast | UI/UX Designer</h3>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/befa1ca3-cff0-458f-8dc7-3ff7ce398498" width="750" alt="Aditya's GitHub Banner"/>
+  <img src="https://github.com/user-attachments/assets/befa1ca3-cff0-458f-8dc7-3ff7ce398498" width="1000" alt="Aditya's GitHub Banner"/>
 </p>
 
 ---
 
 ### 🧠 About Me
-💻 I'm a passionate **Full Stack Developer (MERN)** who loves designing smooth and intuitive web experiences.  
-🎨 I also enjoy crafting clean UI/UX designs and bringing them to life with animations.  
-⚙️ Currently improving my **backend & system design** skills.  
-🎸 When I’m not coding, I’m either playing guitar or lifting weights at the gym.
+💻 I’m a **Full Stack Developer (MERN)** who loves building sleek, scalable, and modern web apps.  
+🧩 Having completed the **MERN stack**, I’m now exploring and upskilling in **AI/ML** — blending logic with creativity.  
+🎨 Passionate about crafting intuitive **UI/UX** designs and turning them into seamless experiences.  
+⚙️ Constantly learning, experimenting, and pushing my boundaries to stay ahead in the tech game.  
+🎸 Outside of coding, you’ll find me **playing guitar, lifting weights**, or diving into new creative projects.
 
 ---
 
@@ -39,8 +36,15 @@
 
 ### ⚙️ Tech Stack
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,react,nodejs,express,mongodb,python,cpp,figma,bootstrap,photoshop,mysql,firebase" />
+  <img src="https://skillicons.dev/icons?i=html,css,js,react,nodejs,express,mongodb,python,cpp,figma,bootstrap,photoshop,mysql,firebase,git" />
 </p>
+
+---
+
+### 🧩 Currently Working On
+🌐 Developing full-stack web applications with modern frameworks.  
+🧠 Expanding knowledge in **Artificial Intelligence & Machine Learning** to build smarter systems.  
+💡 Exploring integrations between **AI and Web Development** for real-world problem solving.
 
 ---
 
@@ -69,5 +73,5 @@
 ---
 
 <p align="center">
-  <i>“Code. Create. Repeat.”</i>
+  <i>“Code. Create. Evolve. Repeat.”</i>
 </p>
