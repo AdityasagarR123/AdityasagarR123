@@ -1,5 +1,4 @@
-https://github.com/user-attachments/assets/8487b7de-5123-4163-b59d-1628d4f6a334
-
+![Video_Generation_with_Chaotic_Vibe](https://github.com/user-attachments/assets/befa1ca3-cff0-458f-8dc7-3ff7ce398498)
 
 - 👋 Hi, I’m @AdityasagarR123
 - 👀 I’m interested in Paying muic and ib love technology ...
