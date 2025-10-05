@@ -1,4 +1,7 @@
- ![Video_Generation_with_Chaotic_Vibe](https://github.com/user-attachments/assets/befa1ca3-cff0-458f-8dc7-3ff7ce398498)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/befa1ca3-cff0-458f-8dc7-3ff7ce398498" width="700" />
+</p>
+
 
 - 👋 Hi, I’m @AdityasagarR123
 - 👀 I’m interested in Paying muic and ib love technology ...
