@@ -1,7 +1,7 @@
-<h1 align="center">Aditya</h1>
+<h1 align="center">Hey, I'm Aditya.</h1>
 
 <h3 align="center">
-ML Engineer & Researcher — RAG, LLMs, AI Security, Open Source
+ML Engineer & Researcher · Full-Stack Developer · Open-Source Contributor
 </h3>
 
 <p align="center">
@@ -10,172 +10,281 @@ ML Engineer & Researcher — RAG, LLMs, AI Security, Open Source
 
 ---
 
-## About
+## About Me
 
-I work on how modern AI systems retrieve information, reason over it, and fail under adversarial conditions. My main areas are retrieval-augmented generation, LLMs, AI security, model evaluation, and reproducible ML.
+I'm a Computer Science student and Full-Stack Developer with a growing focus on **Machine Learning, RAG, LLMs, AI security, and research**.
 
-I learn mostly by contributing to real repositories: reading existing architecture, reproducing issues, writing and testing changes, and going through maintainer review. I like work that sits between research and engineering, where an investigation ends in something people can actually use.
+I like understanding systems from the inside — how they retrieve information, where they fail, how they can be attacked, and how we can make them more reliable.
 
----
+My foundation is in full-stack engineering. I build applications end-to-end, but increasingly my work sits closer to the intersection of **machine learning, security, and systems engineering**.
 
-## Open Source
+I'm also actively contributing to open source, where I'm learning to work with unfamiliar codebases, investigate real problems, write production-oriented code, and collaborate with maintainers.
 
-### AOSSIE / OpenVerifiableLLM
+I don't want to just use intelligent systems.
 
-*Verifiable AI, reproducibility, model verification, frontend*
-
-OpenVerifiableLLM aims to make model provenance, evidence, and releases transparent and reproducible. I built an isolated React + TypeScript + Vite frontend for it, following the project's contributor specification.
-
-**What it includes**
-
-- **Evidence Explorer:** filter by phase, scope, kind, and verification result; fixture, pilot, and production evidence kept separate; immutable references and lineage navigation.
-- **Evidence Detail:** full SHA-256 digest copying, parent/child relationships, historical and superseded reports, technical metadata.
-- **Model Release Interface:** separate base and conversational releases, an explicit "Not released yet" state, and download/generation actions disabled until a valid release exists.
-- **Verification Guide:** artifact identity, data reconstruction, sampled replay, full end-to-end replay, inference reproduction.
-- **Inference Preview:** isolated mock adapter, clear fixture-mode labelling, model identity validation, no fake production inference.
-- **Claim semantics:** `PASS`, `FAIL`, `NOT_RUN`, `UNAVAILABLE`, `UNSUPPORTED`, kept separate from loading and workflow states.
-- **Runtime validation:** Zod schemas, rejection of malformed metadata, handling of missing evidence, and protection against empty checks reporting success.
-- **Accessibility:** keyboard navigation, responsive layouts, WCAG-oriented testing, accessible status/error/copy states, 200% zoom support.
-
-**Validation**
-
-```text
-TypeScript Typecheck      Passed
-Vitest Tests              48 passed
-Playwright Tests          27 passed
-Production Build          Passed
-Production Isolation      Passed
-Accessibility Audit       0 violations
-Clean npm install         0 vulnerabilities
-```
-
-The PR has 14 commits across 56 files with 6,066 additions. The frontend stays isolated from the project's training, verification, signing, and operational infrastructure.
-
-> The goal was not just a UI, but a frontend that doesn't make claims the underlying evidence cannot support.
-
-### Project-HAMi
-
-*Kubernetes, NVIDIA GPU infrastructure, security, Go*
-
-**Issue #3120.** In the NVIDIA device-plugin `Allocate()` path, cache-directory creation used the following calls with their errors ignored:
-
-```text
-os.RemoveAll(...)
-os.MkdirAll(..., 0777)
-os.Chmod(..., 0777)
-```
-
-This caused two problems:
-
-1. **Unhandled filesystem errors.** A failed directory creation could be silently ignored, letting `Allocate()` continue toward a broken mount instead of returning a useful error.
-2. **Excessive permissions.** A root-level device plugin creating a host-side directory with `0777` gives unprivileged processes unnecessary write access.
-
-I documented the issue, tied it to an existing security pattern in the repository, proposed restricted permissions with explicit error handling, and drafted the fix. It was a good lesson in how security bugs in privileged infrastructure code differ from ordinary application bugs.
-
-**Documentation investigation.** I also found conflicting Helm docs for `devicePlugin.nvidiaDriverRoot`, where duplicate entries listed different defaults. I traced it through earlier changes and found the newer `auto` configuration had superseded the old text. The maintainer later explained the docs had moved to the project's website repository.
-
-> Not every issue you find should become a PR. Understanding repository ownership and maintainer direction is part of contributing well.
-
-### What I've Learned
-
-- Reading unfamiliar production codebases and tracing bugs through them
-- Writing reproducible issue reports and spotting security implications
-- Working within contributor specs and keeping changes scoped
-- Writing meaningful automated tests, and checking accessibility and production builds
-- Responding to maintainer feedback, and knowing when not to make a change
-- Keeping development fixtures separate from production evidence
-
----
-
-## Research Interests
-
-- Retrieval-augmented generation
-- Large language models
-- LLM security, prompt injection, and jailbreak detection
-- AI/ML evaluation
-- Trustworthy and verifiable AI
-- AI agents
-- Information retrieval and embeddings
-- Reproducible and adversarial ML
-
-I'm most interested in making AI systems more reliable, measurable, secure, and reproducible.
-
-### Currently Exploring
-
-| Area | Topics |
-|---|---|
-| Machine Learning | Deep learning, transformers, representation learning, model evaluation |
-| Retrieval and RAG | Embeddings, dense retrieval, reranking, RAG evaluation, retrieval benchmarks |
-| AI Security | Prompt injection, jailbreak detection, adversarial prompts, LLM guardrails |
-| Open Source | AI/ML, security, infrastructure, reproducibility, developer tools |
+**I want to understand them.**
 
 ---
 
 ## Tech Stack
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=python,cpp,go,typescript,javascript,react,nodejs,express,fastapi,tailwind,mongodb,mysql,firebase,git,github,linux,docker" />
+### Development
+
+<p>
+  <img src="https://skillicons.dev/icons?i=html,css,javascript,typescript,react,tailwind,nodejs,express,fastapi,mongodb,mysql,firebase,git,github,linux,docker" />
 </p>
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=pytorch,tensorflow" />
+### Machine Learning
+
+<p>
+  <img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow" />
 </p>
 
-| Category | Tools |
-|---|---|
-| AI / ML | Python, PyTorch, TensorFlow, Scikit-learn, XGBoost, Transformers |
-| LLM | RAG, embeddings, LLM evaluation, AI agents, prompt security |
-| Software | React, TypeScript, Node.js, FastAPI, Firebase, MongoDB |
-| Infrastructure | Git, GitHub, Linux, Docker, REST APIs, CI/CD, testing |
+`Scikit-learn` · `XGBoost` · `Pandas` · `NumPy` · `Transformers`
+
+### Areas I'm Exploring
+
+`RAG` · `LLMs` · `Information Retrieval` · `Embeddings` · `AI Security` · `Adversarial ML` · `LLM Evaluation` · `AI Agents` · `Reproducible ML`
 
 ---
 
-## Projects
+# Projects
 
-| Project | Focus |
-|---|---|
-| **OpenVerifiableLLM** | AI verification, evidence exploration, reproducibility, model release infrastructure |
-| **AI-BOUNCER** | Adversarial prompt and jailbreak detection |
-| **Sentara** | AI-based cyber-threat detection |
-| **TrustProof / TrustLens** | Review verification and trust scoring |
-| **InternScout** | Web scraping and virality intelligence |
-| **Farmer Support System** | AI-enabled agricultural assistance |
+### Sentara
 
----
+An AI-based cyber-threat detection framework built around two ML pipelines:
 
-## GitHub Stats
+- Network activity classification using NSL-KDD
+- Malicious vs. benign executable classification using PE features
+- DNN and Random Forest baselines
+- FastAPI inference backend
+- React frontend
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=adityasagarr123&show_icons=true&theme=tokyonight" alt="Aditya's GitHub stats" width="48%" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=adityasagarr123&theme=tokyonight" alt="GitHub streak" width="48%" />
-</p>
+**Stack:** Python · Machine Learning · FastAPI · React
 
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=adityasagarr123&theme=tokyo-night" alt="GitHub activity graph"/>
-</p>
+[Live Demo](https://cyber-threat-detection-backend.vercel.app/) · [GitHub](https://github.com/AdityasagarR123/Sentra)
 
 ---
 
-## Contact
+### AI-BOUNCER
+
+A machine-learning pipeline for detecting adversarial prompts and jailbreak attempts against LLM applications.
+
+The system uses a two-stage architecture:
+
+**XGBoost** handles fast initial classification, while **DeBERTa-v3** evaluates uncertain or higher-risk prompts.
+
+The project focuses on building practical defenses against adversarial inputs while keeping inference cost and latency in mind.
+
+**Stack:** Python · XGBoost · DeBERTa · Transformers · PyTorch
+
+---
+
+### TrustProof / TrustLens
+
+An AI-assisted review verification platform designed to distinguish trustworthy reviews from potentially manipulated or fabricated ones.
+
+The system combines:
+
+- Purchase and bill verification
+- OTP validation
+- Text authenticity analysis
+- Media validation
+- Experience consistency checks
+- Trust scoring
+
+**Stack:** React · TypeScript · Firebase · Gemini · AI Agents
+
+---
+
+### InternScout
+
+A web intelligence platform built around automated data collection and analysis.
+
+The project combines web scraping, API-based processing and a deployed frontend/backend system to discover and analyze online opportunities and signals.
+
+**Stack:** React · Python · Web Scraping · APIs · Vercel · Render
+
+[Live](https://interscout-webscrapper-fqcu.vercel.app/) · [API](https://interscout-webscrappervirality-intel-api.onrender.com/)
+
+---
+
+### Farmer Support System
+
+A full-stack platform designed to provide farmers with accessible information and technology-driven assistance.
+
+**Stack:** React · Node.js · MongoDB · AI/ML
+
+---
+
+# Open Source
+
+Open source has become one of the most important parts of how I learn.
+
+Personal projects let you control the environment.
+
+Open source doesn't.
+
+You have to understand code written by someone else, work within an existing architecture, respect project conventions, justify your changes, test them properly, and accept that maintainers may tell you that your solution isn't needed.
+
+That process is what interests me.
+
+## OpenVerifiableLLM — AOSSIE
+
+**Focus:** AI verification · reproducibility · evidence · model releases
+
+I was given a dedicated frontend contributor brief and built the public frontend around the project's evidence and verification architecture.
+
+### What I worked on
+
+- Evidence Explorer with filtering across phase, scope, kind and result
+- Evidence detail and parent/child lineage
+- SHA-256 digest handling
+- Historical and superseded evidence
+- Base and conversational model release interfaces
+- Verification profiles and result semantics
+- Isolated mock inference adapter
+- Runtime schema validation with Zod
+- Responsive frontend architecture
+- Accessibility testing
+- Unit and browser testing
+- Production build and isolation checks
+
+The current PR contains:
+
+**14 commits · 56 files · 6,066 additions**
+
+Validation:
+
+```text
+TypeScript typecheck       Passed
+48 Vitest tests            Passed
+27 Playwright tests        Passed
+Production build           Passed
+Production isolation       Passed
+Accessibility audit        0 violations
+Clean dependency install   0 vulnerabilities
+```
+
+### Contribution
+
+**[PR #178 — feat(frontend): add static evidence explorer and model release interface](https://github.com/AOSSIE-Org/OpenVerifiableLLM/pull/178)**
+
+The interesting part of this contribution wasn't simply building the interface.
+
+The project required the frontend to distinguish between **what has actually been verified, what has merely been reported, and what is still unavailable**.
+
+That meant designing the UI around evidence rather than assumptions.
+
+---
+
+## Project-HAMi
+
+**Focus:** Kubernetes · NVIDIA GPU infrastructure · Security · Go
+
+My work on HAMi began with a security-oriented investigation of the NVIDIA device-plugin implementation.
+
+I identified an issue in the `Allocate()` path involving:
+
+```go
+os.RemoveAll(...)
+os.MkdirAll(..., 0777)
+os.Chmod(..., 0777)
+```
+
+The filesystem errors were being ignored, while the host-side cache directory was being created with world-writable permissions.
+
+I documented the potential reliability and security implications, traced the issue against an existing security pattern in the repository, proposed explicit error handling and restricted permissions, and drafted the corresponding implementation.
+
+### Contributions
+
+**[Issue #3120 — insecure 0777 permissions and unhandled directory creation errors](https://github.com/Project-HAMi/HAMi/issues/3120)**
+
+**[Issue #3122 — restrict permissions and handle errors for cache directory](https://github.com/Project-HAMi/HAMi/issues/3122)**
+
+I also investigated a conflicting Helm documentation entry:
+
+**[Issue #3111 — duplicate/conflicting `devicePlugin.nvidiaDriverRoot`](https://github.com/Project-HAMi/HAMi/issues/3111)**
+
+The documentation was ultimately maintained in another repository, which was another useful lesson: **contribution is also knowing when not to change something.**
+
+---
+
+## What Open Source Is Teaching Me
+
+Open source has changed how I approach engineering.
+
+I'm learning to:
+
+- Read unfamiliar systems before changing them
+- Investigate instead of assuming
+- Write issues that others can reproduce
+- Make changes that respect existing architecture
+- Treat security as part of engineering, not an afterthought
+- Test what I build
+- Separate evidence from claims
+- Accept review and criticism
+- Understand the reasoning behind maintainers' decisions
+
+I'm still early in this journey.
+
+But I'm no longer learning only by building things from scratch.
+
+I'm learning by **entering systems that already exist and trying to make them better.**
+
+---
+
+# GitHub
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/aditya-sagar-1b35b2323/" target="_blank">
-    <img src="https://skillicons.dev/icons?i=linkedin" width="45"/>
-  </a>
-  &nbsp;&nbsp;&nbsp;
-  <a href="https://instagram.com/d4crush" target="_blank">
-    <img src="https://skillicons.dev/icons?i=instagram" width="45"/>
-  </a>
-  &nbsp;&nbsp;&nbsp;
-  <a href="mailto:adisagar450@gmail.com">
-    <img src="https://skillicons.dev/icons?i=gmail" width="45"/>
-  </a>
+  <img src="https://github-readme-stats.vercel.app/api?username=adityasagarr123&show_icons=true&theme=tokyonight" width="48%" alt="Aditya's GitHub Stats"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=adityasagarr123&theme=tokyonight" width="48%" alt="Aditya's GitHub Streak"/>
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=adityasagarr123&theme=tokyo-night" alt="GitHub Activity Graph"/>
 </p>
 
 ---
 
-**Fun fact:** I can pick up musical rhythms within 3–4 tries, and sometimes learn them in my sleep.
+# Beyond Code
+
+I spend a lot of my time in front of a screen.
+
+So when I get away from it, I usually go as far away as possible.
+
+I'm drawn to **mountains and high-altitude climbing**.
+
+I've spent time trekking through the Himalayas, and I want to keep pushing toward higher and harder routes.
+
+There's something about being above the clouds, carrying everything you need on your back, and having no shortcut to the summit that I find difficult to replace.
+
+**Build quietly. Go farther.**
+
+---
+
+## Connect
 
 <p align="center">
-  <i>"Code. Research. Contribute. Repeat."</i>
+
+<a href="https://www.linkedin.com/in/aditya-sagar-1b35b2323/" target="_blank">
+  <img src="https://skillicons.dev/icons?i=linkedin" width="45"/>
+</a>
+
+&nbsp;&nbsp;&nbsp;
+
+<a href="https://instagram.com/d4crush" target="_blank">
+  <img src="https://skillicons.dev/icons?i=instagram" width="45"/>
+</a>
+
+&nbsp;&nbsp;&nbsp;
+
+<a href="mailto:adisagar450@gmail.com">
+  <img src="https://skillicons.dev/icons?i=gmail" width="45"/>
+</a>
+
+</p>
+
+<p align="center">
+  <i>“The journey matters more than the destination.”</i>
 </p>
